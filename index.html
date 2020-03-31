@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio | Ben Yahr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Ben Yahr Logo"></a>
+    </div>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Project</a>
+        <a href="#">About</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+      </div>
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">open</span>
+  </header>
+
+  <main>
+    <img src="images/Ben_Yahr.jpg" alt="Ben Yahr Portrait">
+    <h1>BEN YAHR</h1>
+    <h2>UX DESIGNER | RESEARCHER</h2>
+    <p>I talk to people, listen to what they think, and design digital solutions to make their lives better.</p>
+    <button>Explore my recent projects!</button>
+
+    <img src="images/paint.jpg" alt="paint">
+    <h3>Projects</h3>
+    <p>While training as a UX designer and researcher, I had to opportunity to work on several projects from discovery to final design. Here are a few case studies of my work.</p>
+
+  </main>
+
+  <section>
+    <div class="project">
+      <h3>Capstone</h3>
+      <p>my final project at Thinkful</p>
+      <button>review case study</button>
+    </div>
+
+    <div class="project">
+      <h3>TuneBox</h3>
+      <p>an iOS music streaming app</p>
+      <button>review case study</button>
+    </div>
+
+    <div class="project">
+      <h3>BusyBus</h3>
+      <p>an iOS public transit app</p>
+      <button>review code on GitHub</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="border">
+      <img src="images/Ben_Yahr_Portrait2.jpg" alt="Ben Yahr Portrait2">
+    </div>
+
+    <h3>About Me</h3>
+    <p>Do you love thoughtful, intuitive designers? Do you love sitcoms from the late 1980s? Learn more about me on the About page.</p>
+    <p>Or check out my resume.pdf!</p>
+
+    <img src="images/dog.jpg" alt="dog">
+  </section>
+
+  <footer>
+    <h3>Let's Create!</h3>
+    <nav>
+      <a href="contact.html">Email</a>
+      <a href="https://www.linkedin.com/in/ben-yahr" target="_blank">LinkedIn</a>
+      <a href="https://www.https://github.com/benyahr" target="_blank">GitHub</a>
+      <a href="https://www.twitter.com/benyahr" target="_blank">Twitter</a>
+    </nav>
+
+    <p>Copyright © 2020 Ben Yahr</p>
+  </footer>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+  </script>
+</body>
+</html>
