@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>About | Ben Yahr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Ben Yahr Logo"></a>
+    </div>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Project</a>
+        <a href="#">About</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+      </div>
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">open</span>
+  </header>
+
+  <main>
+    <img src="images/Ben_Yahr_Portrait3.jpg" alt="Ben Yahr Portrait3">
+    <h1>About Me</h1>
+    <p>I am a UX designer and researcher committed to making inclusive and diverse products that affect real change in real people’s lives. I am also a pitbull owner, a Harry Potter nut, and an expert lip syncer. Right now, I am most likely at home watching The Golden Girls.</p>
+
+    <p>My path has always been a creative one. I started doing professional theater when I was ten years old and continued training as an actor for over a decade. Looking back, I see that what I wanted to do was tell stories. Hear stories. As many as I could. Theater was also how I started my journey as part of the LGBTQ community. Sharing our experiences made me want to magnify marginalized voices, and I use that passion to design inclusive solutions for everyone. My training as an actor also made me perceptive, able to spot details and problems others might miss. This keen insight has proven to be essential as a designer.</p>
+
+    <p>This led me to New York City, where I studied Drama and Child/Adolescent Mental Health Studies at NYU. I was clearly not finished learning about what makes people behave the way they do. After graduating, I worked in several fields, including fitness and hospitality. My desire to improve people’s experiences and learn about their inner natures kept me searching. These experiences have instilled in me a desire to improve situations and build better processes, which is what drives me to be a thoughtful and articulate designer. Eventually, I felt the need for a new direction. So, I did what I do best: I saw an area of opportunity, and I grabbed it.</p>
+
+    <p>I enrolled in Thinkful’s UX Design and Coding program. I learned to take my keen curiosity for human behavior and turn it into innovative and intuitive designs. I also learned how to weave my empathy and unique compassion into each solution, ensuring that any product can help people of all types, pronouns, and priorities. Because at the end of the day, people want their voices to be heard. And I want to listen.</p>
+  </main>
+
+  <footer>
+    <h3>Let's Create!</h3>
+    <nav>
+      <a href="contact.html">Email</a>
+      <a href="https://www.linkedin.com/in/ben-yahr" target="_blank">LinkedIn</a>
+      <a href="https://www.https://github.com/benyahr" target="_blank">GitHub</a>
+      <a href="https://www.twitter.com/benyahr" target="_blank">Twitter</a>
+    </nav>
+
+    <p>Copyright © 2020 Ben Yahr</p>
+  </footer>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+  </script>
+</body>
+</html>
