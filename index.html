@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio | Ben Yahr</title>
   <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
@@ -20,16 +21,15 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="#projects">Projects</a>
+        <a href="index.html/#projects">Projects</a>
         <a href="about.html">About</a>
-        <a href="https://drive.google.com/file/d/1Mm0p6SJkjO29AiqJr0HLu5CMTZOiQJJi/view?usp=sharing">Resume</a>
+        <a href="files/ben_yahr_resume.pdf"><i class="fas fa-file-pdf"></i>Resume</a>
         <a href="contact.html">Contact</a>
       </div>
 
     </div>
-
     <!-- Use any element to open/show the overlay navigation menu -->
-    <span onclick="openNav()">open</span>
+    <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </header>
 
   <main class="home">
@@ -41,16 +41,21 @@
       <button>Explore my recent projects!</button>
     </form>
 
-    <img src="images/paint.jpg" alt="paint">
+  </main>
+
+  <section class="paint">
+    <img src="images/paint.jpg" alt="paint" class="paint">
+  </section>
+
+  <section class="home">
     <h3>Projects</h3>
     <p>While training as a UX designer and researcher, I had to opportunity to work on several projects from discovery to final design. Here are a few case studies of my work.</p>
-
-  </main>
+  </section>
 
   <div class="border"></div>
 
   <section>
-    <div class="project">
+    <div class="project dogapp">
       <h3>Dog App</h3>
       <p>an iOS dog adoption app</p>
       <form action="dogapp.html" method="post">
@@ -58,7 +63,7 @@
       </form>
     </div>
 
-    <div class="project">
+    <div class="project tunebox">
       <h3>TuneBox</h3>
       <p>an iOS music streaming app</p>
       <form action="tunebox.html" method="post">
@@ -66,7 +71,7 @@
       </form>
     </div>
 
-    <div class="project">
+    <div class="project busybus">
       <h3>BusyBus</h3>
       <p>an iOS public transit app</p>
       <form action="https://github.com/benyahr/frontend-challenge" method="post">
@@ -77,16 +82,20 @@
 
   <div class="border"></div>
 
-  <section>
-      <img src="images/Ben_Yahr_Portrait2.jpg" alt="Ben Yahr Portrait2">
+  <section class="benPic2">
+    <img src="images/Ben_Yahr_Portrait2.jpg" alt="Ben Yahr Portrait2" class="benPic2">
+  </section>
 
       <div class="border"></div>
 
+  <section class="about">
     <h3>About Me</h3>
     <p>Do you love thoughtful, intuitive designers? Do you love sitcoms from the late 1980s? Learn more about me on the About page.</p>
     <p>Or check out my resume.pdf!</p>
+  </section>
 
-    <img src="images/dog.jpg" alt="dog">
+  <section class="dog">
+      <img src="images/dog.jpg" alt="dog">
   </section>
 
   <footer>
@@ -101,12 +110,13 @@
     <p>Copyright © 2020 Ben Yahr</p>
   </footer>
   <script>
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.display = "none";
-    }
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
   </script>
 </body>
 </html>
