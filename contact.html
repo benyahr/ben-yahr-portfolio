@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>About | Ben Yahr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Ben Yahr</title>
   <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -20,20 +21,19 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <a href="index.html/#projects">Projects</a>
+        <a href="about.html">About</a>
+        <a href="files/ben_yahr_resume.pdf"><i class="fas fa-file-pdf"></i>Resume</a>
+        <a href="contact.html">Contact</a>
       </div>
 
     </div>
-
     <!-- Use any element to open/show the overlay navigation menu -->
-    <span onclick="openNav()">open</span>
+    <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </header>
 
-  <main>
-    <img src="images/oggie.jpg" alt="oggie">
+  <main class="home">
+    <img src="images/oggie.jpg" alt="oggie" class="benPic4">
     <h1>Let's Create!</h1>
     <form action="https://formspree.io/xjvekelr" method="POST">
       <label>
@@ -66,12 +66,13 @@
     <p>Copyright © 2020 Ben Yahr</p>
   </footer>
   <script>
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.display = "none";
-    }
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
   </script>
 </body>
 </html>

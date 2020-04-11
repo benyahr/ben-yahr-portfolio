@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Ben Yahr</title>
   <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
@@ -20,20 +21,19 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <a href="index.html/#projects">Projects</a>
+        <a href="about.html">About</a>
+        <a href="files/ben_yahr_resume.pdf"><i class="fas fa-file-pdf"></i>Resume</a>
+        <a href="contact.html">Contact</a>
       </div>
 
     </div>
-
     <!-- Use any element to open/show the overlay navigation menu -->
-    <span onclick="openNav()">open</span>
+    <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </header>
 
-  <main>
-    <img src="images/Ben_Yahr_Portrait3.jpg" alt="Ben Yahr Portrait3">
+  <main class="home">
+    <img src="images/Ben_Yahr_Portrait3.jpg" alt="Ben Yahr Portrait3" class="benPic1">
     <h1>About Me</h1>
     <p>I am a UX designer and researcher committed to making inclusive and diverse products that affect real change in real people’s lives. I am also a pitbull owner, a Harry Potter nut, and an expert lip syncer. Right now, I am most likely at home watching The Golden Girls.</p>
 
@@ -58,12 +58,13 @@
     <p>Copyright © 2020 Ben Yahr</p>
   </footer>
   <script>
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.display = "none";
-    }
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
   </script>
 </body>
 </html>

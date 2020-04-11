@@ -19,6 +19,11 @@ header{
   display: inline-block;
 }
 
+.burgerMenu{
+  position: absolute;
+  right: 20px;
+}
+
 main{
   clear: both;
 }
@@ -30,9 +35,20 @@ justify-content: center;
 flex-direction: column;
 }
 
+.input{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  }
+}
+
 .benPic1{
-align-items: center;
+align-self: center;
 padding-bottom: 10px;
+}
+
+.paint{
+  align-self: center;
 }
 
 p{
@@ -59,6 +75,10 @@ h3{
   padding-bottom: 10px;
 }
 
+h4{
+  margin-top: 25px;
+}
+
 button{
   color: #FF6262;
   background-color: white;
@@ -67,6 +87,26 @@ button{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   margin-top: 10px;
+}
+
+.button{
+  color: #FF6262;
+  background-color: white;
+  border: 2px solid #FF6262;
+  height: 32px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+label{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+textarea{
+  width: 90%;
 }
 
 .border{
@@ -87,28 +127,52 @@ button{
 .dogapp{
   background-image: url("../images/dogapp.jpg");
   background-size: cover;
+  align-self: center;
 }
 
 .tunebox{
   background-image: url("../images/tunebox.jpg");
   background-size: cover;
+  align-self: center;
 }
 
 .busybus{
   background-image: url("../images/busybus.jpg");
   background-size: cover;
+  align-self: center;
 }
 
 .benPic2{
-  align-content: center;
+align-self: center;
+}
+
+.benPic3{
+align-self: center;
+margin-top: 25px;
+}
+
+.benPic4{
+align-self: center;
+margin-bottom: 15px;
 }
 
 .about{
   margin-bottom: 25px;
+  margin-left: 28px;
+  margin-right: 28px;
 }
 
 .dog{
   margin-bottom: 25px;
+}
+
+.bold{
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.bold a{
+  color: black;
 }
 
 footer{
