@@ -230,3 +230,27 @@ footer{
     right: 35px;
   }
 }
+
+/* Tablet Portrait*/
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Tablet Landscape*/
+@media only screen and (min-width: 712px) {
+
+}
+
+/* Desktop*/
+@media only screen and (min-width: 900px) {
+  .home{
+  margin-right: 20%;
+  margin-left: 20%;
+  flex-direction: row-reverse;
+  }
+
+  .left{
+    padding-right: 70px;
+    width: 66%;
+  }
+}
