@@ -21,7 +21,7 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="index.html/#projects">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="about.html">About</a>
         <a href="files/ben_yahr_resume.pdf"><i class="fas fa-file-pdf"></i>Resume</a>
         <a href="contact.html">Contact</a>
@@ -30,6 +30,13 @@
     </div>
     <!-- Use any element to open/show the overlay navigation menu -->
     <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <ul class="navbar">
+      <a href="index.html/#projects"><li>Projects</li></a>
+      <a href="about.html"><li>About</li></a>
+      <a href="files/ben_yahr_resume.pdf"><li>Resume</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+    </ul>
   </header>
 
   <main class="home">
@@ -39,24 +46,33 @@
     <h2>UX DESIGNER | RESEARCHER</h2>
     <p>I talk to people, listen to what they think, and design digital solutions to make their lives better.</p>
     <form action="#projects" method="post">
-      <button>Explore my recent projects!</button>
+      <button class="button">Explore my recent projects!</button>
     </form>
     </div>
 
   </main>
 
-  <section class="paint">
+    <div class="border"></div>
+
+    <picture class="paint">
+  <source media="(min-width: 650px)" srcset="images/paint-lg.jpg">
+  <source media="(min-width: 465px)" srcset="images/paint.jpg">
     <img src="images/paint.jpg" alt="paint" class="paint">
+</picture>
+
+  <section>
+
   </section>
 
-  <section class="home">
+    <div class="border"></div>
+
+  <section class="home intro">
     <h3>Projects</h3>
     <p>While training as a UX designer and researcher, I had to opportunity to work on several projects from discovery to final design. Here are a few case studies of my work.</p>
   </section>
 
-  <div class="border"></div>
 
-  <section>
+  <section class="threeCol">
     <div class="project dogapp">
       <h3>Dog App</h3>
       <p>an iOS dog adoption app</p>
@@ -84,23 +100,25 @@
 
   <div class="border"></div>
 
+<div class="about-parent"
   <section class="benPic2">
     <img src="images/Ben_Yahr_Portrait2.jpg" alt="Ben Yahr Portrait2" class="benPic2">
   </section>
-
-      <div class="border"></div>
 
   <section class="about">
     <h3>About Me</h3>
     <p>Do you love thoughtful, intuitive designers? Do you love sitcoms from the late 1980s? Learn more about me on the <span class="bold"> <a href="about.html">About</a></span> page.</p>
     <p>Or check out my <span class="bold"> <a href="assets/resume.pdf">resume.pdf</a></span>!</p>
   </section>
+  </div>
+
+    <div class="border"></div>
 
   <section class="dog">
       <img src="images/dog.jpg" class="benPic1" alt="dog">
   </section>
 
-  <footer>
+  <footer class="footer">
     <h3>Let's Create!</h3>
     <nav>
       <a href="contact.html">Email</a>

@@ -30,10 +30,22 @@
     </div>
     <!-- Use any element to open/show the overlay navigation menu -->
     <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <ul class="navbar">
+      <a href="index.html/#projects"><li>Projects</li></a>
+      <a href="about.html"><li>About</li></a>
+      <a href="files/ben_yahr_resume.pdf"><li>Resume</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+    </ul>
   </header>
 
-  <main class="home">
-    <img src="images/Ben_Yahr_Portrait3.jpg" alt="Ben Yahr Portrait3" class="benPic1">
+  <main class="home bio">
+    <picture class="benPic-lg">
+  <source media="(min-width: 650px)" srcset="images/benPic3-lg.jpg">
+  <source media="(min-width: 465px)" srcset="images/Ben_Yahr_Portrait3.jpg">
+    <img src="images/Ben_Yahr_Portrait3.jpg" alt="Ben Yahr Portrait3">
+    </picture>
+    <div class="bioText">
     <h1>About Me</h1>
     <p>I am a UX designer and researcher committed to making inclusive and diverse products that affect real change in real people’s lives. I am also a pitbull owner, a Harry Potter nut, and an expert lip syncer. Right now, I am most likely at home watching The Golden Girls.</p>
 
@@ -42,11 +54,13 @@
     <p>This led me to New York City, where I studied Drama and Child/Adolescent Mental Health Studies at NYU. I was clearly not finished learning about what makes people behave the way they do. After graduating, I worked in several fields, including fitness and hospitality. My desire to improve people’s experiences and learn about their inner natures kept me searching. These experiences have instilled in me a desire to improve situations and build better processes, which is what drives me to be a thoughtful and articulate designer. Eventually, I felt the need for a new direction. So, I did what I do best: I saw an area of opportunity, and I grabbed it.</p>
 
     <p>I enrolled in Thinkful’s UX Design and Coding program. I learned to take my keen curiosity for human behavior and turn it into innovative and intuitive designs. I also learned how to weave my empathy and unique compassion into each solution, ensuring that any product can help people of all types, pronouns, and priorities. Because at the end of the day, people want their voices to be heard. And I want to listen.</p>
+  </div>
+  <img src="images/babyBen-lg.jpg" alt="Baby Ben" class="baby">
   </main>
 
   <div class="border"></div>
 
-  <footer>
+  <footer class="footer">
     <h3>Let's Create!</h3>
     <nav>
       <a href="contact.html">Email</a>
