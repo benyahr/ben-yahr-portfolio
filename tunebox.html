@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TuneBox | Ben Yahr</title>
+  <title>Portfolio | Ben Yahr</title>
   <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,57 +21,78 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="index.html/#projects">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="about.html">About</a>
-        <a href="files/ben_yahr_resume.pdf"><i class="fas fa-file-pdf"></i>Resume</a>
+        <a href="assets/resume.pdf" download><i class="fas fa-file-pdf"></i>Resume</a>
         <a href="contact.html">Contact</a>
       </div>
 
     </div>
     <!-- Use any element to open/show the overlay navigation menu -->
     <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <ul class="navbar">
+      <a href="#projects"><li>Projects</li></a>
+      <a href="about.html"><li>About</li></a>
+      <a href="assets/resume.pdf" download><li>Resume</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+    </ul>
   </header>
 
   <main class="home">
     <img src="images/dogtwo.jpg" alt="Dog Two" class="benPic1">
+
+    	<div class="left">
     <h2>Case Study</h2>
     <h1>TuneBox</h1>
     <p>This project was part of my UX design and coding program. My role as head designer was to develop the idea from the research and discovery, through branding and identity, and then final visual design.</p>
     <form action="https://invis.io/UVVN3REDX2F" method="post">
       <button>See the prototype!</button>
+
+      <div>
     </form>
-
-    <div class="border"></div>
-
-    <img src="images/girl.jpg" alt="Girl">
-
-    <div class="border"></div>
-
-    <p>Roles: Research, UX/UI Design, Branding and Identity</p>
-    <p>Tools:
-      Google Forms - User survey
-      Figma - User flows, wireframes, mockups
-      InVision - prototypes </p>
-      <p>Deliverables: Link to all TuneBox deliverables - style guide, logo and branding iterations, wireframes, high-fi mockups</p>
 
     </main>
 
+        <div class="border"></div>
+
+    <picture class="girl">
+      <source media="(min-width: 650px)" srcset="images/girl-lg.jpg">
+      <source media="(min-width: 465px)" srcset="images/girl.jpg">
+        <img src="images/girl.jpg" alt="girl">
+    </picture>
+
     <div class="border"></div>
 
-    <section class="home">
+    <section class="roles">
+
+    <p>Roles: Research, UX/UI Design, Branding and Identity</p>
+    <p>Tools: Google Forms - User survey
+      <br>Figma - User flows, wireframes, mockups
+      <br>InVision - prototypes </p>
+    <p>Deliverables: Link to all TuneBox deliverables - style guide, logo and branding iterations, wireframes, high-fi mockups</p>
+
+    </section>
+
+    <div class="border"></div>
+
+    <section class="home survey">
+      <div class="surveyText">
       <h3>User Survey</h3>
       <p>The journey developing TuneBox started the good old fashioned way: with a survey! I wanted to learn about users’ current habits and opinions when it comes to music streaming. I tested between 25-30 people, utilizing my own social pool, various Slack channels, and the Reddit survey forum to find subjects.</p>
+      </div>
       <img src="images/chartone.png" alt="chart" class="benPic2">
       <p>95% currently use a music streaming service</p>
       <img src="images/charttwo.png" alt="chart two" class="benPic2">
       <p>60% use that service every day</p>
       <img src="images/chartthree.png" alt="chart three" class="benPic2">
       <p>Most imporant features were “huge music library” and “creating playlists”</p>
+
     </section>
 
     <div class="border"></div>
 
-    <section class="home">
+    <section class="home competitive">
       <h3>Competitive Analysis</h3>
       <a href="https://docs.google.com/document/d/1U6hKIg2w9BU2sq868_BM-doEtwRu08kuiY4epPetAT8/edit?usp=sharing"><p>Link to competitive analysis</p></a>
       <p>I wanted to see which aspects of Spotify, Amazon, and Apple Music were the most valuable for users. The standout feature from Spotify was the option for free service, which I felt was vital to maintain the inclusivity and accessbility of TuneBox’s design. Reading reviews of all three platforms, it was clear that users found Spotify’s layout and structure easiest to use. The layout of the dashboard, search results, and location of menu buttons helped inform the best and intuitive design for TuneBox. In terms of brand recognition, Apple and Amazon have a massive leg up, as providers of so many other services that people depend on. So, the idea was hatched to use that brand recognition by incorporating those brands in the TuneBox platform. Tunebox = vessel and organizational tool.</p>
@@ -88,7 +109,14 @@
       <form action="https://drive.google.com/open?id=1hY-Ew2rliIh3nOMO84lsVARbIeq2jnvS" method="post">
         <button>View full size personas</button>
       </form>
-      <img src="images/personas.png" alt="personas">
+      <picture class="persona">
+        <source media="(min-width: 650px)" srcset="images/persona1-lg.jpg">
+        <source media="(min-width: 650px)" srcset="images/persona2-lg.jpg">
+        <source media="(min-width: 650px)" srcset="images/persona3-lg.jpg">
+        <source media="(min-width: 465px)" srcset="images/personas.png">
+        <img src="images/personas.png" alt="personas">
+      </picture>
+
     </section>
 
     <div class="border"></div>

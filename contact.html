@@ -21,40 +21,60 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="index.html/#projects">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="about.html">About</a>
-        <a href="files/ben_yahr_resume.pdf"><i class="fas fa-file-pdf"></i>Resume</a>
+        <a href="assets/resume.pdf" download><i class="fas fa-file-pdf"></i>Resume</a>
         <a href="contact.html">Contact</a>
       </div>
 
     </div>
     <!-- Use any element to open/show the overlay navigation menu -->
     <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <ul class="navbar">
+      <a href="#projects"><li>Projects</li></a>
+      <a href="about.html"><li>About</li></a>
+      <a href="assets/resume.pdf" download><li>Resume</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+    </ul>
   </header>
 
-  <main class="home">
-    <img src="images/oggie.jpg" alt="oggie" class="benPic4">
-    <h1>Let's Create!</h1>
+  <div class="contactTop">
+    <div class="contactBen">
+      <img src="images/Ben_Yahr_Portrait2.jpg" alt="Ben Yahr Portrait2">
+    </div>
+
+    <main class="home topper">
+      <h1>Let's Chat!</h1>
+    </main>
+
+    <div class="oggie">
+      <img src="images/oggie.jpg" alt="oggie" class="benPic4">
+    </div>
+  </div>
+
+  <section class="contactForm">
     <form action="https://formspree.io/xjvekelr" method="POST">
-      <label>
+      <label class="label">
         Name
         <input class="input" type="text">
       </label>
-      <label>
+      <label class="label">
         Email
         <input class="input" type="email">
       </label>
-      <label>
+      <label class="label">
         Message
         <textarea class="input"></textarea>
       </label>
       <input class="button" type="submit" value="Send">
     </form>
-  </main>
+  </section>
+
 
   <div class="border"></div>
 
-  <footer>
+  <footer class="footer">
     <h3>Let's Create!</h3>
     <nav>
       <a href="contact.html">Email</a>
