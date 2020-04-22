@@ -662,18 +662,23 @@ footer{
     font-size: 1rem;
   }
 
+  .mockElement{
+    flex: 1;
+  }
+
   .prototype-mobile{
     display: none;
   }
 
   .prototype-desktop{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
   }
 
   .prototypeRow{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .prototype{
@@ -698,7 +703,7 @@ footer{
   }
 
   .oggie-lg img{
-    width: 424px;
+    margin-right: 60px;
   }
 
   .oggie{
@@ -710,24 +715,23 @@ footer{
     float: left;
   }
 
-  .contactBen img{
-    width: 295px;
-  }
-
-
   .contactTop{
     display: flex;
     flex-direction: row;
-    margin-left: 9%;
-    margin-right: 9%;
     margin-top: 25px;
     margin-bottom: 50px;
+    justify-content: center;
   }
 
   .contactForm{
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 5%;
+  }
+
+  .topper{
+    margin-left: 7%;
+    margin-right: 7%;
   }
 
 }
