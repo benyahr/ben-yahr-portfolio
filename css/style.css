@@ -76,7 +76,11 @@ flex-direction: column;
 }
 
 .contactBen{
-  display:none;
+  display: none;
+}
+
+.oggie-lg{
+  display: none;
 }
 
 .input{
@@ -303,6 +307,45 @@ footer{
   font-size: 60px;
 }
 
+.persona-mobile{
+  display: block;
+}
+
+.persona-desktop{
+  display: none;
+}
+
+.flow-mobile{
+  display: block;
+}
+
+.flow-desktop{
+  display: none;
+}
+
+.sketch-mobile{
+  display: block;
+}
+
+.sketch-desktop{
+  display: none;
+}
+
+.prototype-mobile{
+  display: block;
+}
+
+.prototype-desktop{
+  display: none;
+}
+
+.input{
+  width: 70%;
+  height: 47px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -473,22 +516,7 @@ footer{
 	align-self: flex-start;
 }
 
-  /* Tune Box
-
-  .top{
-  	display: flex;
-  	flex-direction: row-reverse;
-  	margin-left: 20%;
-  	margin-right: 20%;
-  }
-
-  .topPic{
-  	  	display: flex;
-  	justify-content: center;
-  	margin-left: 20%;
-  	margin-right: 20%;
-  }
-  */
+  /* Tune Box*/
 
   .girl{
     margin-right: 20%;
@@ -521,17 +549,160 @@ footer{
   flex-direction: column;
 }
 
-  /* Contact */
-
-  .oggie{
+  .graph{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  .oggie img{
-    width: 295px;
+  .pair{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px;
+  }
+
+  .analysis{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .musicLogo img{
+    margin-left: 30px;
+  }
+
+  .personaSection{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personaSection form{
+    display: none;
+  }
+
+  .persona-mobile{
+    display: none;
+  }
+
+  .persona-desktop{
+    display: block;
+  }
+
+  .persona-desktop img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .storiesFlows{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flow-mobile{
+    display: none;
+  }
+
+  .flow-desktop{
+    display: block;
+  }
+
+  .flow-desktop img{
+    margin: 20px;
+  }
+
+  .frames{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sketch-mobile{
+    display: none;
+  }
+
+  .sketch-desktop{
+    display: block;
+  }
+
+  .sketch-desktop img{
+    padding: 5px;
+  }
+
+  .sketchRow{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .identity{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .identity img{
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .mockups{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mockupRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mockupRow img{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .mockupRow h4{
+    font-size: 1rem;
+  }
+
+  .prototype-mobile{
+    display: none;
+  }
+
+  .prototype-desktop{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .prototypeRow{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prototype{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testing{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conclusion{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Contact */
+
+  .oggie-lg{
+    display: block;
+  }
+
+  .oggie-lg img{
+    width: 424px;
+  }
+
+  .oggie{
+    display: none;
   }
 
   .contactBen{
