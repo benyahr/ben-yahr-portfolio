@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="lg-wrap">
   <header>
     <div class="logo">
       <a href="index.html"><img src="images/logo.png" alt="Ben Yahr Logo"></a>
@@ -21,7 +21,7 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="#projects">Projects</a>
+        <a href="index.html#projects">Projects</a>
         <a href="about.html">About</a>
         <a href="assets/resume.pdf" download><i class="fas fa-file-pdf"></i>Resume</a>
         <a href="contact.html">Contact</a>
@@ -32,7 +32,7 @@
     <span class="burgerMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     <ul class="navbar">
-      <a href="#projects"><li>Projects</li></a>
+      <a href="index.html#projects"><li>Projects</li></a>
       <a href="about.html"><li>About</li></a>
       <a href="assets/resume.pdf" download><li>Resume</li></a>
       <a href="contact.html"><li>Contact</li></a>
@@ -59,7 +59,7 @@
       <picture class="girl">
         <source media="(min-width: 650px)" srcset="images/girl-lg.jpg">
           <source media="(min-width: 465px)" srcset="images/girl.jpg">
-            <img src="images/girl.jpg" alt="girl">
+            <img src="images/girl.jpg" alt="girl" class="width-one-hundred">
           </picture>
 
           <div class="border"></div>
@@ -122,7 +122,7 @@
               <a href="https://drive.google.com/open?id=1hY-Ew2rliIh3nOMO84lsVARbIeq2jnvS" target="_blank"><button class="button">View full size personas</button></a>
 
               <div class="persona-mobile">
-                <img src="images/personas.png" alt="personas">
+                <img src="images/personas.png" alt="personas" class="width-one-hundred">
               </div>
 
               <div class="persona-desktop">
@@ -140,7 +140,7 @@
               <p>I wrote numerous user stories and basic task flows, which I then expanded into Draw.io user flow diagrams that I could use as a guide during the design phase. Developing these flows helped me identify which features were necessary to include in my design.</p>
               <a href="https://drive.google.com/drive/folders/185-w-N0VrnloHyr8qj81rfRZfas3Zhz3?usp=sharing" target="_blank"><button class="button">View all stories + flows</button></a>
               <div class="flow-mobile">
-                <img src="images/userflow.png" alt="user flow" class="benPic3">
+                <img src="images/userflow.png" alt="user flow" class="benPic3 width-one-hundred">
               </div>
 
               <div class="flow-desktop">
@@ -155,12 +155,18 @@
               <h3>Sketches + Wireframes</h3>
               <p>I took my research and user flows and made some preliminary design sketches, focusing on the primary features highlighted in my user stories. Then I translated those sketches into low-fi wireframes and an InVision prototype to start initial usability testing.</p>
               <div class="sketch-mobile">
+                <div class="sketchRow">
                 <img src="images/sketchone.png" alt="sketch" class="benPic3">
                 <img src="images/sketchtwo.png" alt="sketch two" class="benPic3">
+                </div>
+                <div class="sketchRow">
                 <img src="images/sketchthree.png" alt="sketch three" class="benPic3">
                 <img src="images/wireframeone.png" alt="wireframe" class="benPic3">
+                </div>
+                <div class="sketchRow">
                 <img src="images/wireframetwo.png" alt="wireframe two" class="benPic3">
                 <img src="images/wireframethree.png" alt="wireframe three" class="benPic3">
+                </div>
               </div>
 
               <div class="sketch-desktop">

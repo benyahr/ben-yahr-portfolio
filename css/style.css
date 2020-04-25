@@ -26,6 +26,7 @@ header{
 .burgerMenu{
   position: absolute;
   right: 20px;
+  color: #FF6262;
 }
 
 main{
@@ -49,8 +50,6 @@ flex-direction: column;
 }
 
 .girl{
-  margin-right: 20%;
-  margin-left: 20%;
   display: flex;
   justify-content: center;
 }
@@ -175,10 +174,12 @@ button{
   color: #FF6262;
   background-color: white;
   border: 2px solid #FF6262;
-  height: 32px;
+  height: 34px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .label{
@@ -258,6 +259,12 @@ margin-bottom: 15px;
   color: black;
 }
 
+.mockupRow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer{
   text-align: center;
   line-height: 250%;
@@ -325,6 +332,14 @@ footer{
 
 .sketch-mobile{
   display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketch-mobile img{
+  height: 100%;
 }
 
 .sketch-desktop{
@@ -333,6 +348,9 @@ footer{
 
 .prototype-mobile{
   display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .prototype-desktop{
@@ -340,11 +358,34 @@ footer{
 }
 
 .input{
-  width: 70%;
+  width: 100%;
   height: 47px;
   border: 1px solid black;
   margin-bottom: 20px;
 }
+
+.heroBen-desktop{
+  display: none;
+}
+
+.heroBen-mobile{
+    display: block;
+    margin-left: 28px;
+  }
+
+  .branding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .width-one-hundred{
+    width: 100%;
+  }
+
+  .footer a{
+    color: black;
+  }
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -367,6 +408,38 @@ footer{
 
 /* Desktop*/
 @media only screen and (min-width: 900px) {
+
+  .branding{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .heroBen-mobile{
+    display: none;
+  }
+
+  .heroBen-desktop{
+    display: block;
+    float: right;
+  }
+
+  .heroBen-desktop img{
+    width: 100%;
+  }
+
+  .aboutBen-mobile{
+    display: none;
+  }
+
+  .aboutBen-desktop{
+    display: block;
+    float: right;
+  }
+
+  .aboutBen-desktop{
+    width: 100%;
+  }
 
   .burgerMenu{
     display: none;
@@ -411,7 +484,7 @@ footer{
   }
 
   .button{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .intro{
@@ -510,6 +583,7 @@ footer{
     display: flex;
     float: right;
     height: 100%;
+    width: 100%;
   }
 
 .benPic-lg{
@@ -654,8 +728,7 @@ footer{
   }
 
   .mockupRow img{
-    margin-left: 20px;
-    margin-right: 20px;
+
   }
 
   .mockupRow h4{
@@ -734,4 +807,11 @@ footer{
     margin-right: 7%;
   }
 
+}
+
+@media only screen and (min-width: 1600px) {
+  .lg-wrap{
+    max-width: 70%;
+    margin: 0 auto;
+  }
 }
